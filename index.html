@@ -4,40 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tap Academy</title>
+    <!--how to link css with html?-->
+    <link rel="icon" href="th.jpg" >
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
-        <img src="th.jpg" alt="Tap Academy Logo" width="100"> <!-- Logo of the organisation -->
-        <nav>
+        <div class="header">
+        <nav class="nav_links">
             <h6>
-                    <a href="index.html">Home</a> |
-                    <a href="courses.html">Courses</a> |
-                    <a href="reviews.html">Reviews</a> |
-                    <a href="hire.html">Hire From Us</a> |
-                    <a href="contact.html">Contact Us</a>
+        <!-- Logo size can be adjusted -->
+        <img src="th.jpg" alt="Tap Academy Logo" width="100" height="60" class="logo"> 
+           <a href="index.html">Home</a> 
+           <a href="courses.html">Courses</a> 
+           <a href="reviews.html">Reviews</a> 
+           <a href="hire.html">Hire From Us</a> 
+           <a href="contact.html">Contact Us</a>
             </h6>
         </nav>
-        <hr>
+    </div>
     </header>
-    
-    <h1>Tap Academy</h1>
+    <div class="header1">
+    <h1 style="color:white">Tap Academy</h1>
     <p>Gamify Learning</p>
     <p>Simplify Employment</p>
     <p>The Best Institute For Java Full Stack Developer Course</p>
-    <p>Trusted by over 75,000+ students across India</p>
-
-    
+    <p>Trusted by over 75,000+ students across India</p> 
     <!--demo and Form Section -->
-    <a href="demoform1.html"><button>Attend Free Demo Class</button></a>
-    <button>Explore Placement Opportunity</button>
+    <a href="demoform1.html"><button class="button1">Attend Free Demo Class <i class="fa-solid fa-arrow-right"></i></button></a>
+    <button class="button">Explore Placement Opportunity</button>
+    
 
     <!-- Students Hired Section -->
-    <h2>Our Students Got Hired From:</h2>
+    
+    <h2 class="comp_logo" >Our Students Got Hired From:</h2>
+
     <!-- Company Logos -->
     
-    <marquee behaviour="slide" direction="left"><img src="infosys.png" alt="#" width="100" height="50">&nbsp;&nbsp;&nbsp;
+    <marquee behaviour="slide" direction="left">
+        <img src="infosys.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="iso-logo1.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="fujitsu.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="athmin-technologies.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
@@ -45,10 +52,10 @@
         <img src="euromonitor.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="fujitsu.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="codeverse.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
-        <img src="rapyuta-robotics.pn" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="raja-softwares.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="ribbon.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
     </marquee>
+    &nbsp;&nbsp;&nbsp;
     <marquee behaviour="slide" direction="right"><img src="infosys.png" alt="#" width="100" height="50">&nbsp;&nbsp;&nbsp;
         <img src="iso-logo1.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="fujitsu.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
@@ -58,16 +65,14 @@
         <img src="fujitsu.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="codeverse.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="inito.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
-        <img src="rapyuta-robotics.pn" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
         <img src="raja-softwares.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="ribbon.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
     </marquee>
-
-
+    </div>
 
     <!-- Recognitions Section -->
     <h2>Recognized by International Bodies & Govt. Of India</h2>
-    
     <marquee behavior="slide" direction="right">
         <img src="Logo1.png" alt="#" width="200" height="100">&nbsp;&nbsp;&nbsp;
         <img src="png-transparent-iso-9000-iso-9001-2015-international-organization-for-standardization-certification-business-label-people-logo-thumbnail.png" alt="#"width="200" height="100">&nbsp;&nbsp;&nbsp;
@@ -75,7 +80,7 @@
         <img src="government-logo.png" alt="#" width="200" height="100">
         <!-- Add more logos as needed -->
     </marquee>
-
+    <div class="why_tap">
     <!-- Why Choose Tap Academy -->
     <h2>Why Choose Tap Academy?</h2>
     <ul>
@@ -83,6 +88,7 @@
         <li><strong>Unlimited Job Opportunities:</strong><img src="download.jpg" alt="#" width="50" height="25"><br> Get unlimited placement opportunities till you get placed</li>
         <li><strong>Hands-on Experience:</strong><img src="investment.png" alt="#" width="50" height="25"> <br>Gain practical skills through real-world projects</li>
     </ul>
+    </div>
 
     <!-- Career Programs Section -->
     <h2>Our Career Programs</h2>
@@ -92,11 +98,14 @@
     <h3>Full Stack Web Development (JAVA)</h3>
     <p>500+ hrs</p>
     <p>Dive into our Java Full Stack Web Development course at TAP Academy, where you'll master Java<br> programming alongside front-end and back-end frameworks, preparing you for a career in dynamic web development.</p>
-    <h3>Best in class Training</h3>
-    <h5>24/7 LMS Access</h5>
-    <h5>24/7 support</h5>
+    <h3><i class="fa-solid fa-user-group"></i>Best in class Training</h3>
+    <h5><i class="fa-brands fa-whatsapp"></i>24/7 LMS Access</h5>
+    <h5><i class="fa-regular fa-address-book"></i>24/7 support</h5>
     <p>500+ Hrs of Best-In-Class Training, 24/7 LMS Access, 24/7 Support</p>
-    <p>Learn Java fundamentals alongside HTML, CSS, and JavaScript basics. <br>Master OOP concepts, Collections Framework.<br>Explore advanced Java, Spring, Hibernate, JDBC, and JEE. <br>Apply your knowledge and skills by working on live projects.</p>
+    <p><i class="fa-solid fa-circle-check"></i>  Learn Java fundamentals alongside HTML, CSS, and JavaScript basics. </p>
+    <p><i class="fa-solid fa-circle-check"></i>  Master OOP concepts, Collections Framework.</p>
+    <p><i class="fa-solid fa-circle-check"></i>  Explore advanced Java, Spring, Hibernate, JDBC, and JEE.</p>
+    <p><i class="fa-solid fa-circle-check"></i>  Apply your knowledge and skills by working on live projects.</p>
     <button>Download Brochure</button>
     <button>Learn More</button><br>
 
@@ -105,14 +114,14 @@
     <h3>Data Structures and Algorithms</h3>
     <p>250+ Hrs</p>
     <p>The Data Structures and Algorithms (DSA) course is a comprehensive program designed to build a solid foundation in computational problem-solving.<br> With all classes delivered through cutting-edge AR technology, you'll enjoy an interactive and engaging learning experience that bridges theory with real-world application.</p>
-    <h4>Best in class Training</h4>
-    <h4>24/7 lms Access</h4>
-    <h4>24/7 support</h4>
+    <h4><i class="fa-solid fa-user-group"></i>Best in class Training</h4>
+    <h4><i class="fa-regular fa-address-book"></i>AR Based learning</h4>
+    <h4><i class="fa-brands fa-whatsapp"></i>24/7 support</h4>
     <p>250+ Hrs</p>
-    <p>Explore bit manipulation, recursion, arrays, matrices.</p>
-    <p>Learn linked lists (singly, doubly, and circular), stacks, and queues.</p>
-    <p>Delve into tree data structures and dynamic programming.</p>
-    <p>Experience all classes through immersive AR technology.</p>
+    <p><i class="fa-solid fa-circle-check"></i> Explore bit manipulation, recursion, arrays, matrices.</p>
+    <p><i class="fa-solid fa-circle-check"></i> Learn linked lists (singly, doubly, and circular), stacks, and queues.</p>
+    <p><i class="fa-solid fa-circle-check"></i> Delve into tree data structures and dynamic programming.</p>
+    <p><i class="fa-solid fa-circle-check"></i> Experience all classes through immersive AR technology.</p>
     <button>Download Brochure</button>
     <button>Learn More</button>
 
@@ -142,33 +151,52 @@
     <!-- Footer Section -->
     <hr>
     <footer>
-        <img src="th.jpg" alt="Tap Academy Logo" width="100">
-        <p>A Unit of Tap Ed Tech Private Limited</p>
-        <!--  Footer links-->
-         <p>Useful Links</p>
+        <div class="footer1"> 
+            <!-- image and one line section   -->
+        <div class="footer-Box1">
+            <img src="th.jpg" alt="Tap Academy Logo" width="100">
+            <p>A Unit of Tap Ed Tech Private Limited</p>
+        </div>
+        
+        <!--  links of the footer section!-->
+        <div class="footer-Box2">
         <ul>
-            <li><a href="home.html">Home</a></li>
+            <li>Useful Links</li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="reviews.html">Student Reviews</a></li>
             <li><a href="hire.html">Hire From Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             
         </ul>
-        <p>Course List</p>
+        </div>
+        <div class="footer-Box3">
         <ul>
+            <li>Course List</li>
             <li><a href="#java-course">Full Stack Web Development (JAVA)</a></li>
             <li><a href="#dsa-course">Data Structures and Algorithms</a></li>
         </ul>
+    </div>
+    <div class="footer-Box4">
+        <p> <b>Follow us:</b></p>
 
-        <!-- Blue Line -->
-        <hr>
-
-        <!-- Footer Legal Links -->
-        <a href="#privacy-policy">Privacy Policy</a> |
-        <a href="#terms">Terms & Conditions</a> |
-        <a href="#refunds">Refunds / Cancellations</a>
-        
-        <!-- Copyright Information -->
-        <p>Copyright © 2024 | Tap Academy</p>
+    </div>
+ </div>       
+</div>
+    <div class="foot-final" >
+            <div class="foot-final-ops">
+                <div class="foot-final-copyright">
+                    <!-- Copyright Information -->
+                    <h5 class="space-left">Copyright © 2024 | Tap Academy</h5>
+                    <!-- Footer Legal Links -->
+                    <h5 class="space-right">
+                        <a href="#privacy-policy">Privacy Policy</a> 
+                        <a href="#terms">Terms & Conditions</a> 
+                        <a href="#refunds">Refunds / Cancellations</a>
+                    </h5>
+                </div>
+                </div>
+            </div>   
+        </div>
     </footer>
 
 </body>
